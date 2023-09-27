@@ -23,7 +23,7 @@
     background-color: #1a2e05;
     color: #f7fee7;
     display: grid;
-    gap: 80px;
+    gap: 60px;
     grid-template-rows: .5fr 1fr 1fr 2fr;
 }
 
@@ -196,17 +196,17 @@
     padding-top: 10px;
     display: grid;
     grid-template-columns: 2fr .75fr;
-    gap: 5px;
+    gap: 15px;
 }
 
 .yourProjects {
     grid-column: 1 / 2; 
-    align-self: center;
+    align-self: end;
 }
 
 .announcements {
     grid-column: 2 / 3;
-    align-self: center;
+    align-self: end;
 }
 
 .projectCards {
