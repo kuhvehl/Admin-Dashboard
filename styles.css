@@ -23,7 +23,7 @@
     background-color: #1a2e05;
     color: #f7fee7;
     display: grid;
-    gap: 20px;
+    gap: 80px;
     grid-template-rows: .5fr 1fr 1fr 2fr;
 }
 
