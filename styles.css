@@ -70,15 +70,16 @@
 
   .greeting {
     grid-area: greeting;
-    display: flex;
-    gap: 1ch;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
     align-items: start;
   }
 
   .buttons {
     grid-area: buttons;
-    display: flex;
+    display: grid;
     gap: 1ch;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
   }
@@ -130,13 +131,15 @@
   }
 
   .logo {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(3ch, 1fr) minmax(11ch, 15fr);
     align-items: center;
     gap: 1.5ch;
   }
 
   .navigation ul li {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(3ch, 1fr) minmax(11ch, 15fr);
     align-items: center;
     gap: 1.5ch;
   }
@@ -148,4 +151,63 @@
 
   .main-content {
     grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "projects-heading . announcements-heading"
+    "cards cards main-sidebar"
+  }
+
+  .main-content > h2 {
+    padding: 1rem;
+    align-self: end;
+  }
+
+  .projects-heading {
+    grid-area: projects-heading;
+    padding: 1rem;
+  }
+
+  .announcements-heading {
+    grid-area: announcements-heading;
+    padding: 1rem;
+  }
+
+  .cards {
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .card {
+    background-color: white;
+  }
+
+  .main-sidebar {
+    grid-area: main-sidebar;
+    display: grid;
+    grid-template-areas:
+    "announcements"
+    "trending-heading"
+    "trending";
+    padding: 1rem;
+  }
+
+  .main-sidebar > h2 {
+    align-self: end;
+    padding-bottom: 1rem;
+  }
+
+  .announcements {
+    grid-area: announcements;
+  }
+
+  .trending-heading {
+    grid-area: trending-heading;
+  }
+
+  .trending {
+    grid-area: trending;
   }
