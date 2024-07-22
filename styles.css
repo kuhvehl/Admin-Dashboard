@@ -47,6 +47,62 @@
     grid-area: header;
     display: grid;
     grid-template-rows: subgrid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+    "search user-info"
+    "greeting buttons";
+  }
+
+  .search, .user-info {
+    grid-area: search;
+    display: flex;
+    gap: 1ch;
+    align-items: center;
+  }
+
+  .user-info {
+    grid-area: user-info;
+    display: flex;
+    gap: 1ch;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .greeting {
+    grid-area: greeting;
+    display: flex;
+    gap: 1ch;
+    align-items: start;
+  }
+
+  .buttons {
+    grid-area: buttons;
+    display: flex;
+    gap: 1ch;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons button {
+    border-radius: 20px;
+    border: none;
+    padding: .5ch 3ch
+  }
+
+  .search input {
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    padding: 1ch;
+  }
+  
+  .search img, .user-info img {
+    height: 2.5ch;
+    width: auto;
+  }
+
+  .greeting img {
+    height: 8ch;
   }
 
   .sidebar {
@@ -75,9 +131,10 @@
 
   .logo {
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 1.5ch;
   }
+
   .navigation ul li {
     display: flex;
     align-items: center;
