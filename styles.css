@@ -134,12 +134,15 @@
   
   .search img, .user-info img {
     height: 2.5ch;
-    width: 2.5ch;
+  }
+
+  .user-info .avatar {
+    height: 5ch;
+    width: 5ch;
   }
 
   img.avatar {
     height: 5ch;
-    width: auto;
     border-radius: 50%;
     background-color: gold;
     border: 10px gold solid;
