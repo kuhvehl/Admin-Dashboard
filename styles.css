@@ -134,14 +134,15 @@
   
   .search img, .user-info img {
     height: 2.5ch;
-    width: auto;
+    width: 2.5ch;
   }
 
   img.avatar {
     height: 5ch;
+    width: auto;
     border-radius: 50%;
-    padding: .7rem;
     background-color: gold;
+    border: 10px gold solid;
     overflow: visible;
   }
 
@@ -359,14 +360,19 @@
 
   .trending div:nth-of-type(1) img {
     background-color: aqua;
+    border: 10px aqua solid;
+
   }
 
   .trending div:nth-of-type(3) img {
     background-color: lightpink;
+    border: 10px lightpink solid;
+
   }
 
   .trending div:nth-of-type(4) img {
     background-color: greenyellow;
+    border: 10px greenyellow solid;
   }
 
   .trending > div > div {
