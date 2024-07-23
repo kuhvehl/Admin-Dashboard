@@ -138,9 +138,9 @@
   }
 
   img.avatar {
-    height: 4ch;
+    height: 5ch;
     border-radius: 50%;
-    padding: .6rem;
+    padding: .7rem;
     background-color: gold;
     overflow: visible;
   }
